@@ -1,0 +1,23 @@
+body {
+  background: #000000;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.main {
+  height: 100%;
+  width: 655px;
+  display: table;
+  margin: 0 auto;
+}
+.wrapper {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+img {
+  width: 655px;
+}
