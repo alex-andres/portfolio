@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: #000000;
+  font-family: "bodoni-urw", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff; 
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes fadeInLinedA{
+  0%{
+    clip-path: none;
+    opacity: 0;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  76%{
+    -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    transform: translate(-55%, 20%);
+    opacity: 0;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+  77%{
+    -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    transform: translate(-55%, 20%);    
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+  }
+  100%{
+    -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    transform: translate(-55%, 20%);    
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+  }
+}
+.container{
+  margin: 0;
+  animation-name: fadeOut, fadeInLinedA;
+  animation-duration: 1.5s, .1s;
+  animation-delay: 6s, 7.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.line {
+  right: 60%;
+  height: 0;
+  width: .3%;
+  transform: rotate(15deg);
+  transform-origin: top right;
+  background-color: #fff;
+}
+
+.logo-group{
+  top: 50%;
+  left: 50%;
+  animation-name: moveGroup;
+  animation-duration: 1s;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveGroup{
+  0%{
+    transform: translate( 0, 50%) scale(1);
+  }
+  100%{
+    transform: translate(-45%, -74%) scale(.3);
+  }
+}
+@keyframes moveLeft{
+  0%{
+    left: 50%;
+  }
+  80%{
+    left: 41.5%
+  }
+  100%{
+    left: 42%;
+  }
+}
+@keyframes stamp{
+  0%{
+
+    transform: scale(1.5) translate(-55%, 20%);
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+  }
+  20%{
+
+    transform: scale(1.5) translate(-55%, 20%);
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+  }
+  80%{
+
+    transform: scale(.9) translate(-55%, 20%);
+    padding: 0;
+    margin: 0;
+  }
+  100%{    
+    transform: scale(1) translate(-55%, 20%);
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.solidA{
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  height: 30vw;
+  background-color: #fff;
+  position: absolute;
+ -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+  opacity: 0;
+
+  animation-name: stamp, moveLeft;
+  animation-duration: .8s, .8s ;
+  animation-delay: 5s, 7.6s ;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lineAnimation {
+  0% {
+    opacity: 0;
+    height:0
+  }
+  100% {
+    opacity: 1;
+    height: 108vh;
+  } 
+}
+//diagonal lines 
+@for $i from 1 through 98{
+  div.line:nth-of-type(#{$i}) {
+    position: absolute;
+    left: 0% +($i*2);
+    height: 108vh;
+    opacity: 0; 
+    
+    animation-name: lineAnimation;
+    animation-duration: .5s ;
+    animation-delay: .05s * $i;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+}
+

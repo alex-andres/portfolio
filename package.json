@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Alex Andres' portfolio of the web development projects",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/css/animation.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-andres/portfolio.git"
+  },
+  "author": "Alex Andres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-andres/portfolio/issues"
+  },
+  "homepage": "https://github.com/c-andres/portfolio#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "grunt": "^1.0.2",
+    "npm": "^6.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^2.1.0",
+    "node-sass": "^4.9.0"
+  }
+}

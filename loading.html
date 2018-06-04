@@ -6,13 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alex Andres: Portfolio Website</title>
-  <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/css/loading.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.min.js"></script>
+  <script type="text/paperscript" canvas="myCanvas">
+    var raster = new Raster('logo')
+    
+    raster.position = view.center
+
+    raster.scale(0.5);
+    console.log(raster);
+    function onFrame(event){
+      raster;
+    }
+  </script>
 </head>
 
 <body>
+  <canvas id="myCanvas" resize="true"></canvas>
   <div class="main">
     <div class="wrapper">
-      <img src="assets/img/logo.png" />
+      <img src="assets/img/logo.png" id="logo" />
     </div>
   </div>
 </body>
