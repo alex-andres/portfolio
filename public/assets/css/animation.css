@@ -1,0 +1,1253 @@
+div.line:nth-of-type(1) {
+  position: absolute;
+  left: 2%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.05s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(2) {
+  position: absolute;
+  left: 4%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(3) {
+  position: absolute;
+  left: 6%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(4) {
+  position: absolute;
+  left: 8%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(5) {
+  position: absolute;
+  left: 10%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.25s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(6) {
+  position: absolute;
+  left: 12%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(7) {
+  position: absolute;
+  left: 14%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.35s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(8) {
+  position: absolute;
+  left: 16%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(9) {
+  position: absolute;
+  left: 18%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(10) {
+  position: absolute;
+  left: 20%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(11) {
+  position: absolute;
+  left: 22%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.55s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(12) {
+  position: absolute;
+  left: 24%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(13) {
+  position: absolute;
+  left: 26%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.65s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(14) {
+  position: absolute;
+  left: 28%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(15) {
+  position: absolute;
+  left: 30%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(16) {
+  position: absolute;
+  left: 32%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(17) {
+  position: absolute;
+  left: 34%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.85s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(18) {
+  position: absolute;
+  left: 36%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(19) {
+  position: absolute;
+  left: 38%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 0.95s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(20) {
+  position: absolute;
+  left: 40%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(21) {
+  position: absolute;
+  left: 42%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.05s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(22) {
+  position: absolute;
+  left: 44%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(23) {
+  position: absolute;
+  left: 46%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(24) {
+  position: absolute;
+  left: 48%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(25) {
+  position: absolute;
+  left: 50%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.25s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(26) {
+  position: absolute;
+  left: 52%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(27) {
+  position: absolute;
+  left: 54%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.35s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(28) {
+  position: absolute;
+  left: 56%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(29) {
+  position: absolute;
+  left: 58%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(30) {
+  position: absolute;
+  left: 60%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(31) {
+  position: absolute;
+  left: 62%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.55s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(32) {
+  position: absolute;
+  left: 64%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(33) {
+  position: absolute;
+  left: 66%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.65s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(34) {
+  position: absolute;
+  left: 68%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(35) {
+  position: absolute;
+  left: 70%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(36) {
+  position: absolute;
+  left: 72%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(37) {
+  position: absolute;
+  left: 74%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.85s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(38) {
+  position: absolute;
+  left: 76%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(39) {
+  position: absolute;
+  left: 78%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 1.95s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(40) {
+  position: absolute;
+  left: 80%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(41) {
+  position: absolute;
+  left: 82%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.05s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(42) {
+  position: absolute;
+  left: 84%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(43) {
+  position: absolute;
+  left: 86%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(44) {
+  position: absolute;
+  left: 88%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(45) {
+  position: absolute;
+  left: 90%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.25s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(46) {
+  position: absolute;
+  left: 92%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(47) {
+  position: absolute;
+  left: 94%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.35s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(48) {
+  position: absolute;
+  left: 96%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(49) {
+  position: absolute;
+  left: 98%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(50) {
+  position: absolute;
+  left: 100%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(51) {
+  position: absolute;
+  left: 102%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.55s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(52) {
+  position: absolute;
+  left: 104%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(53) {
+  position: absolute;
+  left: 106%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.65s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(54) {
+  position: absolute;
+  left: 108%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(55) {
+  position: absolute;
+  left: 110%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(56) {
+  position: absolute;
+  left: 112%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(57) {
+  position: absolute;
+  left: 114%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.85s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(58) {
+  position: absolute;
+  left: 116%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(59) {
+  position: absolute;
+  left: 118%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 2.95s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(60) {
+  position: absolute;
+  left: 120%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(61) {
+  position: absolute;
+  left: 122%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.05s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(62) {
+  position: absolute;
+  left: 124%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(63) {
+  position: absolute;
+  left: 126%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(64) {
+  position: absolute;
+  left: 128%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(65) {
+  position: absolute;
+  left: 130%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.25s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(66) {
+  position: absolute;
+  left: 132%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(67) {
+  position: absolute;
+  left: 134%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.35s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(68) {
+  position: absolute;
+  left: 136%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(69) {
+  position: absolute;
+  left: 138%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(70) {
+  position: absolute;
+  left: 140%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(71) {
+  position: absolute;
+  left: 142%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.55s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(72) {
+  position: absolute;
+  left: 144%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(73) {
+  position: absolute;
+  left: 146%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.65s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(74) {
+  position: absolute;
+  left: 148%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(75) {
+  position: absolute;
+  left: 150%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(76) {
+  position: absolute;
+  left: 152%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(77) {
+  position: absolute;
+  left: 154%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.85s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(78) {
+  position: absolute;
+  left: 156%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(79) {
+  position: absolute;
+  left: 158%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 3.95s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(80) {
+  position: absolute;
+  left: 160%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(81) {
+  position: absolute;
+  left: 162%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.05s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(82) {
+  position: absolute;
+  left: 164%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(83) {
+  position: absolute;
+  left: 166%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(84) {
+  position: absolute;
+  left: 168%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(85) {
+  position: absolute;
+  left: 170%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.25s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(86) {
+  position: absolute;
+  left: 172%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(87) {
+  position: absolute;
+  left: 174%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.35s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(88) {
+  position: absolute;
+  left: 176%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(89) {
+  position: absolute;
+  left: 178%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(90) {
+  position: absolute;
+  left: 180%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(91) {
+  position: absolute;
+  left: 182%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.55s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(92) {
+  position: absolute;
+  left: 184%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(93) {
+  position: absolute;
+  left: 186%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.65s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(94) {
+  position: absolute;
+  left: 188%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(95) {
+  position: absolute;
+  left: 190%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.75s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(96) {
+  position: absolute;
+  left: 192%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(97) {
+  position: absolute;
+  left: 194%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.85s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+div.line:nth-of-type(98) {
+  position: absolute;
+  left: 196%;
+  height: 108vh;
+  opacity: 0;
+  animation-name: lineAnimation;
+  animation-duration: .5s;
+  animation-delay: 4.9s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+@keyframes displayBlockToNone {
+  0% {
+    display: block;
+    opacity: 1; }
+  100% {
+    display: none;
+    opacity: 0; } }
+
+@keyframes diplayNoneToBlock {
+  0% {
+    display: none; }
+  100% {
+    display: block; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeInLinedA {
+  0% {
+    clip-path: none;
+    opacity: 0;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: auto;
+    height: auto; }
+  76% {
+    -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    transform: translate(-55%, 20%);
+    opacity: 0;
+    top: auto;
+    left: auto;
+    position: absolute;
+    width: auto;
+    height: auto; }
+  77% {
+    -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    transform: translate(-55%, 20%);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vw;
+    position: absolute; }
+  100% {
+    -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+    transform: translate(-55%, 20%);
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 30vw;
+    position: absolute; } }
+
+@keyframes lineAnimation {
+  0% {
+    opacity: 0;
+    height: 0; }
+  100% {
+    opacity: 1;
+    height: 108vh; } }
+
+@keyframes moveGroup {
+  0% {
+    transform: translate(0, 50%) scaleX(1) scaleY(1); }
+  100% {
+    transform: translate(-43.5%, -71%) scaleX(0.25) scaleY(0.215); } }
+
+@keyframes moveLeft {
+  0% {
+    left: 50%; }
+  80% {
+    left: 41.5%; }
+  100% {
+    left: 42%; } }
+
+@keyframes scaleUp {
+  0% {
+    transform: scaleX(1), scaleY(1); }
+  100% {
+    transform: scaleX(4), scaleY(4); } }
+
+@keyframes stamp {
+  0% {
+    transform: scale(1.5) translate(-55%, 20%);
+    opacity: 0;
+    padding: 0;
+    margin: 0; }
+  20% {
+    transform: scale(1.5) translate(-55%, 20%);
+    opacity: 1;
+    padding: 0;
+    margin: 0; }
+  80% {
+    transform: scale(0.9) translate(-55%, 20%);
+    padding: 0;
+    margin: 0; }
+  100% {
+    transform: scale(1) translate(-55%, 20%);
+    opacity: 1;
+    padding: 0;
+    margin: 0; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  max-height: 100vh;
+  overflow: hidden;
+  height: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin: 0;
+  animation-name: fadeOut, fadeInLinedA;
+  animation-duration: 1.5s, .1s;
+  animation-delay: 6s, 7.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.header {
+  opacity: 0;
+  animation-name: diplayNoneToBlock, fadeIn;
+  animation-duration: 9s, 1s;
+  animation-delay: 0s, 10s;
+  animation-fill-mode: forwards; }
+
+.line {
+  right: 60%;
+  height: 0;
+  width: .3%;
+  transform: rotate(15deg);
+  transform-origin: top right;
+  background-color: #fff; }
+
+.logo-group {
+  top: 50%;
+  left: 50%;
+  animation-name: moveGroup, displayBlockToNone;
+  animation-duration: 1s, 1s;
+  animation-delay: 9s, 9.5s;
+  animation-fill-mode: forwards; }
+
+.solidA {
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  height: 30vw;
+  background-color: #fff;
+  position: absolute;
+  -webkit-clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+  clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%, 61% 89%, 61% 86%, 70% 86%, 63% 60%, 44% 60%);
+  opacity: 0;
+  animation-name: stamp, moveLeft;
+  animation-duration: .8s, .8s;
+  animation-delay: 5s, 7.6s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }

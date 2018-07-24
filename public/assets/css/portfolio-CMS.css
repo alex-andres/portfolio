@@ -1,0 +1,24 @@
+.main.container{
+  margin: 7.0em 5.0em;
+}
+.showImage{
+  width: 200px;
+}
+.indexImage{
+  width: 100px;
+}
+a img {
+  height: 34px;
+  transform: translateY(12px);
+  margin: 2px;
+  border: none;
+}
+a img:hover{
+  filter: invert(.5);
+}
+.button{
+  display: inline;
+}
+#delete{
+  display: inline;
+}

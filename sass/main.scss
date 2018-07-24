@@ -1,23 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-}
-html{
-  max-height: 100vh;
-  overflow: hidden;
-}
 
-body {
-  background: #000000;
-  font-family: "bodoni-urw", serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff; 
-  margin: 0;
-  padding: 0;
+//diagonal lines 
+@for $i from 1 through 98{
+  div.line:nth-of-type(#{$i}) {
+    position: absolute;
+    left: 0% +($i*2);
+    height: 108vh;
+    opacity: 0; 
+    
+    animation-name: lineAnimation;
+    animation-duration: .5s ;
+    animation-delay: .05s * $i;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
 }
-
+@keyframes displayBlockToNone{
+  0%{
+    display: block;
+    opacity: 1;
+  }
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes diplayNoneToBlock{
+  0%{
+    display: none;
+  }
+  100%{
+    display: block;
+  }
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 @keyframes fadeOut{
   0%{
     opacity: 1;
@@ -26,6 +48,7 @@ body {
     opacity: 0;
   }
 }
+
 @keyframes fadeInLinedA{
   0%{
     clip-path: none;
@@ -70,38 +93,22 @@ body {
     position: absolute;
   }
 }
-.container{
-  margin: 0;
-  animation-name: fadeOut, fadeInLinedA;
-  animation-duration: 1.5s, .1s;
-  animation-delay: 6s, 7.5s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
+@keyframes lineAnimation {
+  0% {
+    opacity: 0;
+    height:0
+  }
+  100% {
+    opacity: 1;
+    height: 108vh;
+  } 
 }
-.line {
-  right: 60%;
-  height: 0;
-  width: .3%;
-  transform: rotate(15deg);
-  transform-origin: top right;
-  background-color: #fff;
-}
-
-.logo-group{
-  top: 50%;
-  left: 50%;
-  animation-name: moveGroup;
-  animation-duration: 1s;
-  animation-delay: 9s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes moveGroup{
   0%{
-    transform: translate( 0, 50%) scale(1);
+    transform: translate( 0, 50%) scaleX(1) scaleY(1);
   }
   100%{
-    transform: translate(-45%, -74%) scale(.3);
+    transform: translate( -43.5%, -71%) scaleX(.25) scaleY(.215);
   }
 }
 @keyframes moveLeft{
@@ -113,6 +120,14 @@ body {
   }
   100%{
     left: 42%;
+  }
+}
+@keyframes scaleUp{
+  0%{
+    transform: scaleX(1), scaleY(1);
+  }
+  100%{
+    transform: scaleX(4), scaleY(4);
   }
 }
 @keyframes stamp{
@@ -144,6 +159,66 @@ body {
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html{
+  max-height: 100vh;
+  overflow: hidden;
+  height: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  margin: 0;
+  animation-name: fadeOut, fadeInLinedA;
+  animation-duration: 1.5s, .1s;
+  animation-delay: 6s, 7.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+// .line-group{
+//   margin: 0;
+//   animation-name: scaleUp;
+//   animation-duration: 1s;
+//   animation-delay: 7s;
+//   animation-timing-function: linear;
+//   animation-fill-mode: forwards;
+// }
+.header{
+  opacity:0;
+  animation-name: diplayNoneToBlock, fadeIn;
+  animation-duration: 9s, 1s;
+  animation-delay: 0s, 10s;
+  animation-fill-mode: forwards;
+}
+.line {
+  right: 60%;
+  height: 0;
+  width: .3%;
+  transform: rotate(15deg);
+  transform-origin: top right;
+  background-color: #fff;
+}
+.logo-group{
+  top: 50%;
+  left: 50%;
+  animation-name: moveGroup, displayBlockToNone;
+  animation-duration: 1s, 1s;
+  animation-delay: 9s, 9.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
 .solidA{
   top: 50%;
   left: 50%;
@@ -162,30 +237,6 @@ clip-path: polygon(45% 57%, 62% 57%, 54% 26%, 58% 9%, 79% 86%, 87% 86%, 87% 89%,
   animation-fill-mode: forwards;
 }
 
-@keyframes lineAnimation {
-  0% {
-    opacity: 0;
-    height:0
-  }
-  100% {
-    opacity: 1;
-    height: 108vh;
-  } 
-}
-//diagonal lines 
-@for $i from 1 through 98{
-  div.line:nth-of-type(#{$i}) {
-    position: absolute;
-    left: 0% +($i*2);
-    height: 108vh;
-    opacity: 0; 
-    
-    animation-name: lineAnimation;
-    animation-duration: .5s ;
-    animation-delay: .05s * $i;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
 
-}
+
 

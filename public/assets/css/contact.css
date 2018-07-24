@@ -1,0 +1,51 @@
+body {
+  background: url('../img/slate.jpg');
+  font-family: bodoni-urw, serif;
+  font-style: normal;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+}
+
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+#projectRow {
+  width: 869px;
+}
+button.navbar-toggler {
+  margin-top: -25px;
+  border: none;
+  outline: none;
+}
+#logo {
+  height: 146px;
+  width: 146px;
+}
+
+#toggler {
+  height: 37px;
+  width: 69px;
+}
+.logo {
+  border: none;
+}
+#gmail {
+  background: url(../img/colorGmail.png);
+  height: 20vw;
+  width: 20vw;
+  border: none;
+}
+#github {
+  background: url(../img/colorGithub.png);
+  height: 20vw;
+  width: 20vw;
+}
+#linkedin {
+  background: url(../img/colorLinkedin.png);
+  height: 20vw;
+  width: 20vw;
+}
+
+

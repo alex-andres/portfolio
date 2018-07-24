@@ -8,18 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c-andres/portfolio.git"
+    "url": "git+https://github.com/alex-andres/portfolio.git"
   },
   "author": "Alex Andres",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/c-andres/portfolio/issues"
+    "url": "https://github.com/alex-andres/portfolio/issues"
   },
-  "homepage": "https://github.com/c-andres/portfolio#readme",
+  "homepage": "https://github.com/alex-andres/portfolio#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-sanitizer": "^1.0.4",
     "grunt": "^1.0.2",
-    "npm": "^6.0.1"
+    "method-override": "^3.0.0",
+    "mongoose": "^5.2.4",
+    "nodemon": "^1.18.3",
+    "npm": "^6.2.0"
   },
   "devDependencies": {
     "grunt-contrib-concat": "^1.0.1",

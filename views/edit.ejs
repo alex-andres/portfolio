@@ -1,0 +1,28 @@
+<% include ./partials/header-cms%>
+  <div class="ui main text container segment">
+    <div class="ui huge header">Edit <%= project.title %></div>
+    <form class="ui form" action="/portfolio/<%= project._id %>?_method=PUT" method="POST">
+      <div class="field">
+        <label>Title</label>
+        <input type="text" name="project[title]" value="<%= project.title %>">
+      </div>
+      <div class="field">
+        <label>Image Link</label>
+        <input type="text" name="project[image]" value="<%= project.image %>">
+      </div>
+      <div class="field">
+        <label>Description</label>
+        <textarea name="project[body]"><%= project.body %></textarea>
+      </div>
+      <div class="field">
+        <label>Technologies (seperate by comma and space)</label>
+        <textarea name="project[technologies]" rows="2" ><%= project.technologies %></textarea>
+      </div>
+      <div class="field">
+        <label>URL</label>
+        <input type="text" name="project[url]" value="<%= project.url %>">
+      </div>
+      <button class="ui button" type="submit">Edit</button>
+    </form>
+  </div>
+  <% include ./partials/footer-cms%>

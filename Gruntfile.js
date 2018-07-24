@@ -5,11 +5,11 @@ module.exports = grunt => {
         files: [
           {
             src: 'sass/main.scss',
-            dest: 'assets/css/animation.css'
+            dest: './public/assets/css/animation.css'
           },
           {
             src: 'sass/nav-menu.scss',
-            dest: 'assets/css/nav-menu.css'
+            dest: './public/assets/css/nav-menu.css'
           }
         ]
       }

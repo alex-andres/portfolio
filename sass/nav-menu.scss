@@ -4,13 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #000000;
-  font-family: "bodoni-urw", serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
-}
+
 a{
  color: inherit; 
 }
@@ -37,6 +31,29 @@ button.navbar-toggler {
   outline: none;
 }
 
+.nav-menu{
+  margin-top: -20px;
+}
+@media (max-width: 768px) { 
+  .nav-menu{
+    margin-top: 0;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 768px) { 
+  .main{
+    margin-top: 0;
+    padding-top: 40px;
+  }
+}
+
+
+@media (max-width: 768px) { 
+  .navbar{
+    margin-bottom: 0;
+  }
+}
+
 .header{
   position: relative
 }
@@ -51,11 +68,15 @@ button.navbar-toggler {
 .logo {
   height: 146px;
 }
+.navbar{
+  margin-bottom:-60px;
+}
 
 .navbar-toggler{
   position: absolute;
   top: 10vh;
-  left: 90vw;
+  right: 1vw;
+  width: 100px;
 }
 
 #toggler {
@@ -64,7 +85,7 @@ button.navbar-toggler {
 }
 
 .nav-menu-item {
-  font-size: 10vw;
+  font-size: 7vw;
   border: 1px black solid;
   border-bottom: 1px white solid;
 }

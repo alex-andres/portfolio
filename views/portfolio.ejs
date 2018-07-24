@@ -1,0 +1,40 @@
+<% include ./partials/header-cms%> 
+  <div class="main container text ui">
+    <div class="ui huge header">Portfolio Editing App</div>
+      <div class="ui top attached segment">
+        <div class="ui divided items">
+          <% projects.forEach(function(project){ %>
+            <div class="item">
+              <div class="image">
+                <img class="indexImage" src='<%= project.image %>'>
+              </div>
+              <div class="content">
+                <a href="/portfolio/
+                <%= project._id %>" class="header"><%=project.title%></a>
+                <div class="meta"><span><%= project.created.toDateString() %></span></div>
+                <div class="description">
+                  <p>
+                    Description:
+                    <%= project.body.substring(0, 100) %>...
+                  </p>
+                  <p>Technologies:</p>
+                  <ul>
+                    <% project.technologies.split(', ').forEach(function(technology){ %>
+                      <li>
+                        <%=technology%>
+                      </li>
+                      <% }) %>
+                  </ul>
+                </div>
+                <div class="extra">
+                  <a class="ui basic button"  href="/portfolio/<%= project._id %>">Show More</a>
+                  </div>
+                </div>
+              </div>
+            <% }) %>
+        </div>
+      </div>
+    
+    
+  </div>
+<% include ./partials/footer-cms%>

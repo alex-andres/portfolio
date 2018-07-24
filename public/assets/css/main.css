@@ -1,0 +1,11 @@
+.content{
+  margin-top: 15vh;
+}
+
+body {
+  background: url('../img/slate.jpg');
+  font-family: bodoni-urw, serif;
+  font-style: normal;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+}

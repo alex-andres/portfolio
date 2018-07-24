@@ -1,0 +1,28 @@
+<% include ./partials/header-cms%>
+  <div class="ui main text container segment">
+    <div class="ui huge header">New Project</div>
+    <form class="ui form" action="/portfolio" method="POST">
+      <div class="field">
+        <label>Title</label>
+        <input type="text" name="project[title]" placeholder="Title">
+      </div>
+      <div class="field">
+        <label>Image Link</label>
+        <input type="text" name="project[image]" placeholder="Image">
+      </div>
+      <div class="field">
+        <label>Description</label>
+        <textarea required name="project[body]"></textarea>
+      </div>
+      <div class="field">
+        <label>Technologies</label>
+        <textarea name="project[technologies]" rows="2"></textarea>
+      </div>
+      <div class="field">
+        <label>URL</label>
+        <input type="text" name="project[url]" placeholder="URL">
+      </div>
+      <button class="ui button" type="submit">Upload</button>
+    </form>
+  </div>
+  <% include ./partials/footer-cms%>

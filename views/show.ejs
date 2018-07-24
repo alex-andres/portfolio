@@ -1,0 +1,41 @@
+<% include ./partials/header-cms%>
+  <div class="ui main text container segment">
+    <div class="ui huge header"><%= project.title %></div>
+    <div class="ui top attached">
+      <div class="item">
+
+        <img class="ui centered rounded image" src='<%= project.image %>'>
+        <div class="content">
+        </div>
+        <p>
+          Date Created: <%= project.created.toDateString() %>
+        </p>
+
+        <div class="description">
+          <p>
+            Description: <%- project.body %>
+          </p>
+          <p>Technologies:</p>
+          <ul> 
+             <% project.technologies.split(', ').forEach(function(technology){ %>
+            <li>
+              <%=technology%>
+            </li>
+            <% }) %>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <a href="<%- project.url %>" class="githubLink">
+          <img class="githubLogo" src="https://image.flaticon.com/icons/png/128/25/25231.png" alt="">
+        </a>
+        <a href="/portfolio/<%= project.id %>/edit">
+          <button class="ui button inverted green"> Edit</button>
+        </a>
+        <form id="delete" action="/portfolio/<%= project.id %>?_method=DELETE" method="POST">
+          <button class="ui button inverted red"> Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<% include ./partials/footer-cms%>
