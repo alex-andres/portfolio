@@ -4,7 +4,8 @@
   "description": "Alex Andres' portfolio of the web development projects",
   "main": "app.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss assets/css/animation.css"
+    "compile:sass": "node-sass sass/main.scss assets/css/animation.css",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
