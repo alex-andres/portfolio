@@ -1251,3 +1251,6 @@ body {
   animation-delay: 5s, 7.6s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards; }
+
+#github {
+  margin-bottom: 25px; }

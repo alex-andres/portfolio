@@ -1,8 +1,4 @@
-body{
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
+
 .row {
   width: 100%;
   margin: 0 auto;
@@ -34,12 +30,12 @@ body{
 #projectRow {
   width: 869px;
 }
-button.navbar-toggler {
+/* button.navbar-toggler {
   width: 102px;
   margin-top: -25px;
   border: none;
   outline: none;
-}
+} */
 #logo {
   height: 146px;
   width: 146px;

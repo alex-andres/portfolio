@@ -3,8 +3,8 @@
 }
 
 body {
-  background: url('../img/slate.jpg');
-  font-family: bodoni-urw, serif;
+  background: #272727;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 300;
   color: hsl(0, 0%, 100%);

@@ -1,8 +1,7 @@
 body {
-  background: url('../img/slate.jpg');
-  font-family: bodoni-urw, serif;
-  font-style: normal;
+  font-family: futura-pt, sans-serif;
   font-weight: 300;
+  font-style: normal;
   color: hsl(0, 0%, 100%);
 }
 

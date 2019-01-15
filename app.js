@@ -1,22 +1,43 @@
 const express = require('express'),
-bodyParser = require('body-parser'),
-mongoose = require('mongoose'),
-methodOverride = require('method-override'),
-expressSanitizer = require('express-sanitizer'),
-app = express();
+  bodyParser = require('body-parser'),
+  fs = require('fs'),
+  passport = require('passport'),
+  LocalStrategy = require('passport-local'),
+  mongoose = require('mongoose'),
+  methodOverride = require('method-override'),
+  expressSanitizer = require('express-sanitizer'),
+  User = require('./models/user'),
+  app = express();
 
 //APP CONFIG
-mongoose.connect('mongodb://localhost:27017/restful_portfolio_app', {useNewUrlParser: true});
+mongoose.connect(
+  'mongodb://localhost:27017/restful_portfolio_app',
+  { useNewUrlParser: true }
+);
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSanitizer());
-app.use(methodOverride("_method"));
+app.use(methodOverride('_method'));
+app.use(
+  require('express-session')({
+    secret:
+      'Mo Salah, Mo Salah, Mo Salah, running down the wing... Salah la la la la la la.... The Egyptian king',
+    resave: false,
+    saveUninitialized: false
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 //MONGOOSE/MODEL CONFIG
 const portfolioSchema = new mongoose.Schema({
   title: String,
-  image: String,
+  image: { front: String, back: String },
   body: String,
   technologies: String,
   url: String,
@@ -25,88 +46,76 @@ const portfolioSchema = new mongoose.Schema({
 
 const Portfolio = mongoose.model('Portfolio', portfolioSchema);
 
-// Portfolio.create({
-//   title: 'Wagtive',
-//   image: '/assets/img/wagtiveMobile.png',
-//   body:
-//     'A gamified activity and social media app for Dog owners that allows users to receive points and level up through live tracking of activities such as runs and walks with their dogs, checking into pet related businesses, as well as interacting with other dog owners',
-//   technologies:
-//     'HTML/CSS/Javascript, Bootstrap, Google Maps, Firebase Database, Firebase Authentication, Yelp API, Loadingbarjs',
-//   url: 'https://github.com/alex-andres/Wagtive'
-// });
-
-app.get('/portfolio', (req, res) => {
-  Portfolio.find({}, (err, projects) =>{
-    if(err){
+app.get('/portfolio', isLoggedIn, (req, res) => {
+  Portfolio.find({}, (err, projects) => {
+    if (err) {
       console.log('Error!');
-    }
-    else{
-      res.render('portfolio', {projects: projects});
+    } else {
+      res.render('portfolio', { projects: projects });
     }
   });
 });
 //new route
-app.get('/portfolio/new', (req, res) => {
+app.get('/portfolio/new', isLoggedIn, (req, res) => {
   res.render('portfolio-new');
 });
 //create route
-app.post('/portfolio', (req, res)=>{
+app.post('/portfolio', isLoggedIn, (req, res) => {
   req.body.project.body = req.sanitize(req.body.project.body);
-  Portfolio.create(req.body.project, (err, newProject)=>{
-    if(err){
-      res.render('portfolio-new')
-    }else{
+  Portfolio.create(req.body.project, (err, newProject) => {
+    if (err) {
+      res.render('portfolio-new');
+    } else {
       res.redirect('/portfolio');
     }
-  })
-})
+  });
+});
 //edit route
-app.get('/portfolio/:id/edit', (req, res)=>{
+app.get('/portfolio/:id/edit', isLoggedIn, (req, res) => {
   Portfolio.findById(req.params.id, (err, foundProject) => {
     if (err) {
       res.redirect('/portfolio');
-    }
-    else {
+    } else {
       res.render('edit', { project: foundProject });
     }
   });
-
-})
+});
 //update route
-app.put('/portfolio/:id', (req,res)=>{
+app.put('/portfolio/:id', isLoggedIn, (req, res) => {
   req.body.project.body = req.sanitize(req.body.project.body);
-  Portfolio.findByIdAndUpdate(req.params.id, req.body.project, (err, updatedBlog)=>{
-    if(err){
-      res.redirect('/portfolio');
-    } else {
-      res.redirect('/portfolio/' + req.params.id);
+  Portfolio.findByIdAndUpdate(
+    req.params.id,
+    req.body.project,
+    (err, updatedBlog) => {
+      if (err) {
+        res.redirect('/portfolio');
+      } else {
+        res.redirect('/portfolio/' + req.params.id);
+      }
     }
-
-  })
-})
-app.get('/portfolio/:id', (req, res)=>{
+  );
+});
+app.get('/portfolio/:id', isLoggedIn, (req, res) => {
   Portfolio.findById(req.params.id, (err, foundProject) => {
     if (err) {
       res.redirect('/portfolio');
-    }
-    else {
-      res.render('show', {project: foundProject  });
+    } else {
+      res.render('show', { project: foundProject });
     }
   });
-})
+});
 //delete route
-app.delete('/portfolio/:id',(req, res)=>{
-  Portfolio.findByIdAndRemove(req.params.id, (err)=>{
-    if(err){
+app.delete('/portfolio/:id', isLoggedIn, (req, res) => {
+  Portfolio.findByIdAndRemove(req.params.id, err => {
+    if (err) {
       res.redirect('/portfolio');
-    }
-    else{
+    } else {
       res.redirect('/portfolio');
     }
   });
 });
 
-app.get('/portfolio-update', (req, res) => {
+app.get('/portfolio-update', isLoggedIn, (req, res) => {
   res.render('portfolio-update');
 });
 
@@ -115,11 +124,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/projects', (req, res) => {
-  res.render('projects');
-});
-
-app.get('/portfolio-detail', (req, res) => {
-  res.render('portfolio-detail');
+  Portfolio.find({}, (err, projects) => {
+    if (err) {
+      console.log('Error!');
+    } else {
+      res.render('projects', { projects: projects });
+    }
+  });
 });
 
 app.get('/about', (req, res) => {
@@ -131,7 +142,42 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/resume', (req, res) => {
-  res.render('r');
+  var tempFile = './public/assets/img/Alex_Andres_Resume.pdf';
+  fs.readFile(tempFile, function(err, data) {
+    res.contentType('application/pdf');
+    res.send(data);
+  });
 });
 
-app.listen(3000, () => console.log('Portfolio Server is Running'));
+// ===========
+// AUTH ROUTES
+// ===========
+
+
+app.get('/login', (req, res) => {
+  res.render('login');
+});
+
+app.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
+
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) {
+    return next();
+  }
+  res.redirect('/login');
+}
+
+
+app.post(
+  '/login',
+  passport.authenticate('local', {
+    successRedirect: 'portfolio',
+    failureRedirect: 'login'
+  }),
+  (req, res) => {}
+);
+
+app.listen(process.env.PORT, process.env.IP);

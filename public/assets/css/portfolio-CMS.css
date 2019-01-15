@@ -22,3 +22,7 @@ a img:hover{
 #delete{
   display: inline;
 }
+
+#github{
+  margin-bottom: 25px;
+}

@@ -3,53 +3,46 @@
 <% include ./partials/nav.ejs %>
   <div class="main">
     <div class="wrapper">
-      <div class="container">
-        <div id="js-flip-1" class="flip">
-          <div class="card">
-            <div class="face front">
-              <img src="assets/img/wagtive.png" id="projectImg" alt="Wagtive Project Image" title="Click for more info">
-            </div>
-            <div class="face back">
-              <div class="row">
-                <div class="col-md-6 col-12">
-                  <img src="assets/img/wagtiveMobile.png" id="mobileImg" alt="">
-                </div>
-                <div class="col-md-1"></div>
+      <% projects.forEach(function(project){ %>
+        <div class="container">
+          <div class="flip">
+            <div class="card">
+              <div class="face front">
+                <img src="<%= project.image.front %>" id="projectImg" alt="<%=project.title%> Project Image" title="Click for more info">
+              </div>
+              <div class="face back">
+                <div class="row back-content">
+                  <div class="col-md-6 col-12">
+                    <img src="<%= project.image.back %>" id="mobileImg" alt="<%=project.title%> Project Image">
+                  </div>
+                  <div class="col-md-1"></div>
 
-                <div class="col-md-5 col-12">
-                  <div class="description">
-                    <h3>Wagtive</h3>
-                    <p>
-                      A gamified activity and social media app for Dog owners that allows users to receive points and level up through
-                      live tracking of activities such as runs and walks with their dogs, checking into pet related businesses, as well as interacting
-                      with other dog owners.
-                    </p>
-                    <p> Technologies: </p>
-                    <ul>
-                      <li>HTML/CSS/Javascript</li>
-                      <li>Bootstrap</li>
-                      <li>Google Maps</li>
-                      <li>Firebase Database</li>
-                      <li>Firebase Authentication</li>
-                      <li>Yelp API</li>
-                      <li>Loadingbarjs</li>
-                    </ul>
-                    
-                    <a href="https://github.com/alex-andres/Wagtive" class="pt-1">
-                      <img class="githubLink" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-                    </a>
+                  <div class="col-md-5 col-12">
+                    <div class="description">
+                      <h3><%=project.title%></h3>
+                      <p>
+                        <%= project.body %>
+                      </p>
+                      <p> Technologies: </p>
+                      <ul>
+                        <% project.technologies.split(', ').forEach(function(technology){ %>
+                          <li>
+                            <%=technology%>
+                          </li>
+                        <% }) %>
+                      </ul>
+                      
+                      <a href="<%= project.url %>" class="pt-1">
+                        <img class="githubLink" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>  
+              </div>  
+            </div>
           </div>
         </div>
-        <section id="section04" class="demo">
-          <h1></h1>
-          <a href="#section05">
-            <span></span></a>
-        </section>
-      </div>
+      <% }) %>
     </div>
   </div>
   <script type="text/javascript" src="/assets/js/portfolio.js"></script>

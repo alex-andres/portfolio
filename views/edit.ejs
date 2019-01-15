@@ -7,8 +7,12 @@
         <input type="text" name="project[title]" value="<%= project.title %>">
       </div>
       <div class="field">
-        <label>Image Link</label>
-        <input type="text" name="project[image]" value="<%= project.image %>">
+        <label>Front Image Link</label>
+        <input type="text" name="project[image.front]" placeholder="Front Image">
+      </div>
+      <div class="field">
+        <label>Back Image Link</label>
+        <input type="text" name="project[image.back]" placeholder="Back Image">
       </div>
       <div class="field">
         <label>Description</label>
