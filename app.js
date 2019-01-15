@@ -10,8 +10,12 @@ const express = require('express'),
   app = express();
 
 //APP CONFIG
+// mongoose.connect(
+//   'mongodb://localhost:27017/restful_portfolio_app',
+//   { useNewUrlParser: true }
+// );
 mongoose.connect(
-  'mongodb://localhost:27017/restful_portfolio_app',
+  'mongodb://candres41:Didierdrogba11@ds157574.mlab.com:57574/alexandresportfolio',
   { useNewUrlParser: true }
 );
 app.set('view engine', 'ejs');
@@ -153,7 +157,6 @@ app.get('/resume', (req, res) => {
 // AUTH ROUTES
 // ===========
 
-
 app.get('/login', (req, res) => {
   res.render('login');
 });
@@ -170,7 +173,6 @@ function isLoggedIn(req, res, next) {
   res.redirect('/login');
 }
 
-
 app.post(
   '/login',
   passport.authenticate('local', {
@@ -180,4 +182,5 @@ app.post(
   (req, res) => {}
 );
 
-app.listen(process.env.PORT, process.env.IP);
+// app.listen(process.env.PORT, process.env.IP);
+app.listen(3000, console.log('App has started'));
