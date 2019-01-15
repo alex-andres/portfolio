@@ -10,14 +10,14 @@ const express = require('express'),
   app = express();
 
 //APP CONFIG
-// mongoose.connect(
-//   'mongodb://localhost:27017/restful_portfolio_app',
-//   { useNewUrlParser: true }
-// );
 mongoose.connect(
-  'mongodb://candres41:Didierdrogba11@ds157574.mlab.com:57574/alexandresportfolio',
+  'mongodb://localhost:27017/restful_portfolio_app',
   { useNewUrlParser: true }
 );
+// mongoose.connect(
+//   'mongodb://candres41:Didierdrogba11@ds157574.mlab.com:57574/alexandresportfolio',
+//   { useNewUrlParser: true }
+// );
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -156,9 +156,28 @@ app.get('/resume', (req, res) => {
 // ===========
 // AUTH ROUTES
 // ===========
+app.get('/register', (req, res) => {
+  res.render('register');
+});
 
 app.get('/login', (req, res) => {
   res.render('login');
+});
+
+app.post('/register', (req, res) => {
+  User.register(
+    new User({ username: req.body.username }),
+    req.body.password,
+    (err, user) => {
+      if (err) {
+        console.log(err);
+        res.render('register');
+      }
+      passport.authenticate('local')(req, res, () => {
+        res.redirect('/secret');
+      });
+    }
+  );
 });
 
 app.get('/logout', (req, res) => {
@@ -182,5 +201,5 @@ app.post(
   (req, res) => {}
 );
 
-app.listen(process.env.PORT, process.env.IP);
-// app.listen(3000, console.log('App has started'));
+// app.listen(process.env.PORT, process.env.IP);
+app.listen(3000, console.log('App has started'));
