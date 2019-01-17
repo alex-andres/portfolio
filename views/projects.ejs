@@ -14,7 +14,7 @@
                 <div class="row back-content">
                   <div class="col-md-6 col-12">
                     
-                    <a href="<%= project.url %>"><img src="<%= project.image.back %>" id="mobileImg" alt="<%=project.title%> Project Image"></a>
+                    <a href="<%= project.url %>" target="_blank"><img src="<%= project.image.back %>" class="mobileImg" alt="<%=project.title%> Project Image" title="Click to view live project"></a>
                   </div>
                   <div class="col-md-1"></div>
 
@@ -33,7 +33,7 @@
                         <% }) %>
                       </ul>
                       
-                      <a href="<%= project.url %>" class="pt-1">
+                      <a href="<%= project.githubURL %>" target="_blank" class="pt-1">
                         <img class="githubLink" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
                       </a>
                     </div>

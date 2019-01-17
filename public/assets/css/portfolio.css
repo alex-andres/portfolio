@@ -21,10 +21,7 @@ button.navbar-toggler {
   height: 37px;
   width: 69px;
 }
-#mobileImg{
-  width: 250px;
-  height: 433px;
-}
+
 #projectImg {
   width: 100%;
   height: 100%;
@@ -46,15 +43,23 @@ button.navbar-toggler {
   filter: invert(50%);
 }
 
+.mobileImg{
+  width: 100%;
+  height: auto;
+}
 .card{
   background-color: transparent;
   border: none;
 }
-/* .container{
+.container{
   height: 100vh;
-} */
+  padding-top: 10vh;
+}
+.container:first-of-type{
+  padding-top: 0;
+}
 div.container:nth-of-type(even) {
-    background: #e0e0e0;
+    background:#ffffff;
     margin:0;
     max-width: 100%;
     color: #272727;
