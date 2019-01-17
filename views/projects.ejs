@@ -1,50 +1,72 @@
 <% include ./partials/header.ejs %>
+    <!-- <link rel="stylesheet" href="/assets/css/reset.css"> CSS reset -->
+    <link rel="stylesheet" href="/assets/css/vertical-fixed-nav.css"> <!-- Resource style -->
+    <script src="/assets/js/vertical-fixed-nav/modernizr.js"></script> <!-- Modernizr -->
     <link rel="stylesheet" type="text/css" href="/assets/css/portfolio.css">
 <% include ./partials/nav.ejs %>
   <div class="main">
+      <nav id="cd-vertical-nav">
+        <% projects.forEach(function(project, index){ %>
+          <ul>
+            <li>
+              <a href="#section<%=index+1%>"  data-number="<%=index+1%>">
+                <span class="cd-dot"></span>
+                <span class="cd-label"><%=project.title%></span>
+              </a>
+            </li>
+          </ul>
+        <% }) %>
+      </nav>
     <div class="wrapper">
-      <% projects.forEach(function(project){ %>
-        <div class="container">
-          <div class="flip">
-            <div class="card">
-              <div class="face front">
-                <img src="<%= project.image.front %>" id="projectImg" alt="<%=project.title%> Project Image" title="Click for more info">
-              </div>
-              <div class="face back">
-                <div class="row back-content">
-                  <div class="col-md-6 col-12">
-                    
-                    <a href="<%= project.url %>" target="_blank"><img src="<%= project.image.back %>" class="mobileImg" alt="<%=project.title%> Project Image" title="Click to view live project"></a>
-                  </div>
-                  <div class="col-md-1"></div>
-
-                  <div class="col-md-5 col-12">
-                    <div class="description">
-                      <h3><%=project.title%></h3>
-                      <p>
-                        <%= project.body %>
-                      </p>
-                      <p> Technologies: </p>
-                      <ul>
-                        <% project.technologies.split(', ').forEach(function(technology){ %>
-                          <li>
-                            <%=technology%>
-                          </li>
-                        <% }) %>
-                      </ul>
+      <% projects.forEach(function(project, index){ %>
+        <section id="section<%=index + 1%>" class="cd-section">
+          <div class="container">
+            <div class="flip">
+              <div class="card">
+                <div class="face front">
+                  <img src="<%= project.image.front %>" id="projectImg" alt="<%=project.title%> Project Image" title="Click for more info">
+                </div>
+                <div class="face back">
+                  <div class="row back-content">
+                    <div class="col-md-6 col-12">
                       
-                      <a href="<%= project.githubURL %>" target="_blank" class="pt-1">
-                        <img class="githubLink" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
-                      </a>
+                      <a href="<%= project.url %>" target="_blank"><img src="<%= project.image.back %>" class="mobileImg" alt="<%=project.title%> Project Image" title="Click to view live project"></a>
+                    </div>
+                    <div class="col-md-1"></div>
+  
+                    <div class="col-md-5 col-12">
+                      <div class="description">
+                        <h3><%=project.title%></h3>
+                        <p>
+                          <%= project.body %>
+                        </p>
+                        <p> Technologies: </p>
+                        <ul>
+                          <% project.technologies.split(', ').forEach(function(technology){ %>
+                            <li>
+                              <%=technology%>
+                            </li>
+                          <% }) %>
+                        </ul>
+                        
+                        <a href="<%= project.githubURL %>" target="_blank" class="pt-1">
+                          <img class="githubLink" src="https://magentys.io/wp-content/uploads/2017/04/github-logo-1.png" alt="">
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>  
+                </div>  
+              </div>
             </div>
           </div>
-        </div>
+          <% if (index === 0){ %>
+            <a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+          <% } %>
+        </section>
       <% }) %>
     </div>
   </div>
+  <script src="/assets/js/vertical-fixed-nav/jquery-2.1.1.js"></script>
+  <script src="/assets/js/vertical-fixed-nav/main.js"></script>
   <script type="text/javascript" src="/assets/js/portfolio.js"></script>
 <% include ./partials/footer.ejs %>
