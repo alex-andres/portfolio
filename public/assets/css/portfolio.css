@@ -35,12 +35,10 @@ button.navbar-toggler {
 .githubLink{
   width: 40px;
   /* height: 40px; */
-}
-.githubLink:nth-of-type(even) {
-  filter: invert(100%);
+  filter: invert(50%)
 }
 .githubLink:hover{
-  filter: invert(50%);
+  filter: invert(100%);
 }
 
 .mobileImg{
