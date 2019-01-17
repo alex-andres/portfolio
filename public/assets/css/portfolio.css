@@ -39,6 +39,9 @@ button.navbar-toggler {
   width: 40px;
   /* height: 40px; */
 }
+.githubLink:nth-of-type(even) {
+  filter: invert(100%);
+}
 .githubLink:hover{
   filter: invert(50%);
 }
@@ -47,8 +50,15 @@ button.navbar-toggler {
   background-color: transparent;
   border: none;
 }
-.container{
+/* .container{
   height: 100vh;
+} */
+div.container:nth-of-type(even) {
+    background: #e0e0e0;
+    margin:0;
+    max-width: 100%;
+    color: #272727;
+
 }
 
 
@@ -80,12 +90,10 @@ button.navbar-toggler {
 .flip .card .front {
     position: absolute;
     z-index: 1;
-    color: white;
     cursor: pointer;
 }
 .flip .card .back {
     -webkit-transform: rotatex(-180deg);
-    color: white;
     cursor: pointer;
 }
 ul{

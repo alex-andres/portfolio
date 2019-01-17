@@ -8,25 +8,29 @@
       </div>
       <div class="field">
         <label>Front Image Link</label>
-        <input type="text" name="project[image.front]" placeholder="Front Image">
+        <input type="text" name="project[image.front]" value="<%= project.image.front %>">
       </div>
       <div class="field">
         <label>Back Image Link</label>
-        <input type="text" name="project[image.back]" placeholder="Back Image">
+        <input type="text" name="project[image.back]" value="<%= project.image.back %>">
       </div>
       <div class="field">
         <label>Description</label>
-        <textarea name="project[body]"><%= project.body %></textarea>
+        <textarea required name="project[body]"><%= project.body %></textarea>
       </div>
       <div class="field">
-        <label>Technologies (seperate by comma and space)</label>
-        <textarea name="project[technologies]" rows="2" ><%= project.technologies %></textarea>
+        <label>Technologies</label>
+        <textarea name="project[technologies]"rows="2"><%= project.technologies %></textarea>
       </div>
       <div class="field">
         <label>URL</label>
         <input type="text" name="project[url]" value="<%= project.url %>">
       </div>
-      <button class="ui button" type="submit">Edit</button>
+      <div class="field">
+        <label>Github URL</label>
+        <input type="text" name="project[githubURL]" value="<%= project.githubURL %>">
+      </div>
+      <button class="ui button" type="submit">Update</button>
     </form>
   </div>
   <% include ./partials/footer-cms%>

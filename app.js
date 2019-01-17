@@ -45,6 +45,7 @@ const portfolioSchema = new mongoose.Schema({
   body: String,
   technologies: String,
   url: String,
+  githubURL: String,
   created: { type: Date, default: Date.now }
 });
 
@@ -201,5 +202,5 @@ app.post(
   (req, res) => {}
 );
 
-app.listen(process.env.PORT, process.env.IP);
-// app.listen(3000, console.log('App has started'));
+// app.listen(process.env.PORT, process.env.IP);
+app.listen(3000, console.log('App has started'));
