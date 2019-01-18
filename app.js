@@ -8,7 +8,7 @@ const express = require('express'),
   expressSanitizer = require('express-sanitizer'),
   User = require('./models/user'),
   app = express(),
-  config = require('./config');
+  keys = require('./config/keys');
 
 //APP CONFIG
 // mongoose.connect(
@@ -16,7 +16,7 @@ const express = require('express'),
 //   { useNewUrlParser: true }
 // );
 mongoose.connect(
-  'mongodb://candres41:Didierdrogba11@ds157574.mlab.com:57574/alexandresportfolio',
+  keys.mongoURI,
   { useNewUrlParser: true }
 );
 app.set('view engine', 'ejs');
@@ -26,8 +26,7 @@ app.use(expressSanitizer());
 app.use(methodOverride('_method'));
 app.use(
   require('express-session')({
-    secret:
-      config.secret,
+    secret: keys.secret,
     resave: false,
     saveUninitialized: false
   })
