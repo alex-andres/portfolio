@@ -26,7 +26,7 @@ app.use(expressSanitizer());
 app.use(methodOverride('_method'));
 app.use(
   require('express-session')({
-    secret: keys.secret,
+    secret: 'Mo Salah, Mo Salah, Mo Salah, running down the wing...Salah la la la la la la....The Egyptian king',
     resave: false,
     saveUninitialized: false
   })
