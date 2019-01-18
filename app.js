@@ -16,7 +16,7 @@ const express = require('express'),
 //   { useNewUrlParser: true }
 // );
 mongoose.connect(
-  keys.mongoURI,
+  'mongodb://candres41:Didierdrogba11@ds157574.mlab.com:57574/alexandresportfolio',
   { useNewUrlParser: true }
 );
 app.set('view engine', 'ejs');
@@ -26,7 +26,8 @@ app.use(expressSanitizer());
 app.use(methodOverride('_method'));
 app.use(
   require('express-session')({
-    secret: 'Mo Salah, Mo Salah, Mo Salah, running down the wing...Salah la la la la la la....The Egyptian king',
+    secret:
+      'Mo Salah, Mo Salah, Mo Salah, running down the wing...Salah la la la la la la....The Egyptian king',
     resave: false,
     saveUninitialized: false
   })
