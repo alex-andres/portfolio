@@ -7,7 +7,8 @@ const express = require('express'),
   methodOverride = require('method-override'),
   expressSanitizer = require('express-sanitizer'),
   User = require('./models/user'),
-  app = express();
+  app = express(),
+  config = require('./config');
 
 //APP CONFIG
 // mongoose.connect(
@@ -26,7 +27,7 @@ app.use(methodOverride('_method'));
 app.use(
   require('express-session')({
     secret:
-      'Mo Salah, Mo Salah, Mo Salah, running down the wing... Salah la la la la la la.... The Egyptian king',
+      config.secret,
     resave: false,
     saveUninitialized: false
   })
@@ -202,5 +203,5 @@ app.post(
   (req, res) => {}
 );
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, console.log('App has started'));
 // app.listen(3000, console.log('App has started'));

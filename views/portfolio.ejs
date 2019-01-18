@@ -9,8 +9,7 @@
                 <img class="indexImage" src='<%= project.image.back %>'>
               </div>
               <div class="content">
-                <a href="/portfolio/
-                <%= project._id %>" class="header"><%=project.title%></a>
+                <a href="/portfolio/<%= project._id %>" class="header"><%=project.title%></a>
                 <div class="meta"><span><%= project.created.toDateString() %></span></div>
                 <div class="description">
                   <p>
